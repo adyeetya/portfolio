@@ -1,0 +1,88 @@
+@import '../../app.scss';
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include mobile {
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      margin-top: 70px;
+    }
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+      @include mobile {
+        text-align: center;
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    @include mobile {
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 20px;
+        border: none;
+        background: orange;
+        font-size: 24px;
+        font-weight: 500;
+        height: 100px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        @include mobile {
+          font-size: 20px;
+          font-weight: 400;
+          height: 50px;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      button:hover {
+        background: pink;
+        color: white;
+      }
+    }
+  }
+}
