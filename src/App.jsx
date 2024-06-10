@@ -7,6 +7,7 @@ import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Cursor from './components/cursor/Cursor'
+import Skills from './components/skills/Skills'
 const App = () => {
   return (
     <div>
@@ -26,6 +27,9 @@ const App = () => {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
+      <section id="Skills">
+        <Skills />
+      </section>
 
       <section id="Contact">
         <Contact />

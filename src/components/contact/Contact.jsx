@@ -56,15 +56,29 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let&apos;s Work Together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@gmail.com</span>
+          <span>
+            <a href="mailto:2612adityasingh2000@gmail.com">
+              2612adityasingh2000@gmail.com
+            </a>
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Kanpur, India</span>
+          <span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Kanpur,+India"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kanpur, India
+            </a>
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>9721880384</span>
+          <span>
+            <a href="tel:9721880384">9721880384</a>
+          </span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -80,7 +94,9 @@ const Contact = () => {
           <textarea rows={8} name="message" required placeholder="Message" />
           <button type="submit">Submit</button>
           {error && <div style={{ color: 'red' }}>Something went wrong</div>}
-          {success && <div style={{ color: 'green' }}>Success</div>}
+          {success && (
+            <div style={{ color: 'green' }}>Message sent successfully.</div>
+          )}
         </motion.form>
       </div>
     </motion.div>

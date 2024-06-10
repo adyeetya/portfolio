@@ -39,6 +39,12 @@ const sliderVariants = {
 }
 
 const Hero = () => {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('Contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
     <div className="hero">
       <div className="wrapper">
@@ -56,7 +62,9 @@ const Hero = () => {
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>
+              <a href="#Contact">Contact Me</a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -75,7 +83,7 @@ const Hero = () => {
         Writer Developer Artist Designer
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero.svg" alt="" />
       </div>
     </div>
   )

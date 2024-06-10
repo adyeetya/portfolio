@@ -1,0 +1,74 @@
+@import '../../app.scss';
+.skills {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    @include mobile {
+      text-align: center;
+      gap: 20px;
+      padding: 0px;
+      align-items: center;
+      margin-top: 70px;
+    }
+    h1 {
+      font-size: 80px;
+      line-height: 88px;
+      text-align: center;
+      @include mobile {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+    .items {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // Two columns of equal width
+      gap: 10px;
+      height: 300px;
+      @include mobile {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+      }
+      .item {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+        h2 {
+          font-size: 28px;
+          gap: 20px;
+          @include mobile {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+}

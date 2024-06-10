@@ -44,52 +44,37 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <b>Unique</b> Ideas
+            <b>Turning Ideas</b>
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For Your</b> Business
+            into <b>Realities</b>
           </h1>
           <button>What We Do?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div className="box">
-          <h2>Branding</h2>
+          <h2>Modular Kitchen Website</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-            aut! Officiis recusandae in quam minima nisi suscipit facere
-            pariatur at.
+            Next.js site for modular interior and kitchen solutions, showcasing
+            over 600 designs and products. This initiative resulted in a 20%
+            increase in user interactions and a 10% rise in product inquiries
+            since launch.
           </p>
-          <button>Go</button>
+
+          <a href="https://manufacturer-site.vercel.app/">Check it out</a>
         </motion.div>
         <motion.div className="box">
-          <h2>Branding</h2>
+          <h2>Design Indian Homes Website</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-            aut! Officiis recusandae in quam minima nisi suscipit facere
-            pariatur at.
+            Next.js site, boosting online inquiries by 20%, traffic by 15%, and
+            reducing bounce rate by 30%. This translated to 500 additional
+            monthly inquiries, 2000 more monthly visitors, and a 25% increase in
+            average session duration.
           </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-            aut! Officiis recusandae in quam minima nisi suscipit facere
-            pariatur at.
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-            aut! Officiis recusandae in quam minima nisi suscipit facere
-            pariatur at.
-          </p>
-          <button>Go</button>
+          <a href="https://designindianhomes.com/">Check it out</a>
         </motion.div>
       </motion.div>
     </motion.div>
