@@ -53,7 +53,9 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let&apos;s Work Together</motion.h1>
+        <motion.h1 variants={variants}>
+          Let&apos;s Work <br /> Together
+        </motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <span>
@@ -91,7 +93,7 @@ const Contact = () => {
         >
           <input type="text" name="name" required placeholder="Name" />
           <input type="email" name="email" required placeholder="Email" />
-          <textarea rows={8} name="message" required placeholder="Message" />
+          <textarea name="message" required placeholder="Message" />
           <button type="submit">Submit</button>
           {error && <div style={{ color: 'red' }}>Something went wrong</div>}
           {success && (

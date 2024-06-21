@@ -47,6 +47,8 @@
       grid-template-columns: 1fr 1fr; // Two columns of equal width
       gap: 10px;
       height: 300px;
+
+      
       @include mobile {
         grid-template-columns: 1fr;
         width: 100%;
@@ -61,8 +63,13 @@
         h2 {
           font-size: 28px;
           gap: 20px;
+
+          @include smmobile {
+            font-size: 12px;
+          }
+
           @include mobile {
-            font-size: 20px;
+            font-size: 16px;
           }
         }
       }

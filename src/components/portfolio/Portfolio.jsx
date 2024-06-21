@@ -63,6 +63,7 @@ const Single = ({ item }) => {
                   className="all-projects"
                   src="/projects.jpeg"
                   alt="checkout"
+                  style={{ maxHeight: '400px', width: '100%' }}
                 />
                 <div
                   style={{

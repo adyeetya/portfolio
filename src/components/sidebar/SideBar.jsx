@@ -5,14 +5,14 @@ import './sidebar.scss'
 import ToggleButton from './toggleButton/ToggleButton'
 const variants = {
   open: {
-    clipPath: 'circle(1200px at 50px 50px)',
+    clipPath: 'circle(1200px at 30px 30px)',
     transition: {
       type: 'spring',
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: 'circle(30px at 50px 50px)',
+    clipPath: 'circle(25px at 30px 30px)',
     transition: {
       delay: 0.5,
       type: 'spring',
@@ -30,7 +30,7 @@ const SideBar = () => {
     of open and closed it applied to this in the open animation the clippath is circle but
     because the radius of the circle is 1200 and the width of the bg is only 400 it looks like a rect in the side */}
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links setOpen={setOpen} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>

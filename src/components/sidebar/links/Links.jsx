@@ -23,7 +23,7 @@ const itemVariants = {
     opacity: 0,
   },
 }
-const Links = () => {
+const Links = ({ setOpen }) => {
   const items = ['Homepage', 'Services', 'Portfolio', 'Skills', 'Contact']
 
   return (
@@ -36,6 +36,7 @@ const Links = () => {
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => setOpen((prev) => !prev)}
           >
             {item}
           </motion.a>
